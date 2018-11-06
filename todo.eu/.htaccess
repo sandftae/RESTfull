@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} ^/$
+    RewriteRule ^(.*)$ /web/index.html  [L,QSA]
+    RewriteRule ^api/v1/note/.* /api/v1/entrance.php [L]
+</IfModule>
